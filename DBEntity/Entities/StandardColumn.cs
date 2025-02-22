@@ -28,7 +28,7 @@
         /// <summary>
         /// 更新者
         /// </summary>
-        public string? update_user { get; set } = string.Empty;
+        public string? update_user { get; set; } = string.Empty;
 
         /// <summary>
         /// 更新プログラム

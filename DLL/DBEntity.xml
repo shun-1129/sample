@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DBEntity</name>
+    </assembly>
+    <members>
+        <member name="F:DBEntity.ApplicationDBContext._connectInfo">
+            <summary>
+            DB接続情報
+            </summary>
+        </member>
+        <member name="M:DBEntity.ApplicationDBContext.#ctor(System.String)">
+            <summary>
+            デフォルトコンストラクタ
+            </summary>
+            <param name="connentInfo">DB接続情報</param>
+        </member>
+        <member name="M:DBEntity.ApplicationDBContext.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)">
+            <summary>
+            DB接続設定
+            </summary>
+            <param name="optionsBuilder">オプションビルダー</param>
+        </member>
+        <member name="M:DBEntity.ApplicationDBContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>
+            モデル作成
+            </summary>
+            <param name="modelBuilder">モデルビルダー</param>
+        </member>
+        <member name="T:DBEntity.Entities.StandardColumn">
+            <summary>
+            標準カラム
+            </summary>
+        </member>
+        <member name="P:DBEntity.Entities.StandardColumn.create_at">
+            <summary>
+            作成日時
+            </summary>
+        </member>
+        <member name="P:DBEntity.Entities.StandardColumn.create_user">
+            <summary>
+            作成者
+            </summary>
+        </member>
+        <member name="P:DBEntity.Entities.StandardColumn.create_program">
+            <summary>
+            作成プログラム
+            </summary>
+        </member>
+        <member name="P:DBEntity.Entities.StandardColumn.update_at">
+            <summary>
+            更新日時
+            </summary>
+        </member>
+        <member name="P:DBEntity.Entities.StandardColumn.update_user">
+            <summary>
+            更新者
+            </summary>
+        </member>
+        <member name="P:DBEntity.Entities.StandardColumn.update_program">
+            <summary>
+            更新プログラム
+            </summary>
+        </member>
+        <member name="T:DBEntity.Entities.Transaction.t_plc_request">
+            <summary>
+            PLC要求テーブル
+            </summary>
+        </member>
+        <member name="P:DBEntity.Entities.Transaction.t_plc_request.id">
+            <summary>
+            PLC要求ID
+            </summary>
+        </member>
+        <member name="P:DBEntity.Entities.Transaction.t_plc_request.command">
+            <summary>
+            命令
+            </summary>
+        </member>
+        <member name="P:DBEntity.Entities.Transaction.t_plc_request.command_status">
+            <summary>
+            命令状態
+            </summary>
+        </member>
+        <member name="P:DBEntity.Entities.Transaction.t_plc_request.content">
+            <summary>
+            命令内容
+            </summary>
+        </member>
+    </members>
+</doc>
